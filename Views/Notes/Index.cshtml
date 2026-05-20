@@ -1,0 +1,15 @@
+@model IEnumerable<DockerTestApp.Models.Note>
+@{
+    ViewData["Title"] = "Notes";
+}
+<h1>Notes</h1>
+<p><a class="btn btn-primary" href="/Notes/Create">Create Note</a></p>
+<div class="list-group">
+@foreach(var n in Model)
+{
+    <div class="list-group-item">
+        <h5>@n.Title</h5>
+        <p>@n.Content</p>
+    </div>
+}
+</div>

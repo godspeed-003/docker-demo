@@ -1,0 +1,19 @@
+@model IEnumerable<DockerTestApp.Models.Person>
+@{
+    ViewData["Title"] = "People";
+}
+<h1>People</h1>
+<p><a class="btn btn-primary" href="/People/Create">Create Person</a></p>
+<table class="table">
+    <thead><tr><th>ID</th><th>Name</th><th>Email</th></tr></thead>
+    <tbody>
+    @foreach(var p in Model)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Name</td>
+            <td>@p.Email</td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Docker / SQL Server data
+sql-data/
+sqlserver-data/
+docker-test-*
+
+# Visual Studio Code
+.vscode/
+
+# local env file
+.env
